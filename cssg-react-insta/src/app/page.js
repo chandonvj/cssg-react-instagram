@@ -1,4 +1,5 @@
-import Image from "next/image";
+// import Image from "next/image";
+import Link from "next/link";
 
 export default function InstagramClone() {
   return (
@@ -67,6 +68,16 @@ export default function InstagramClone() {
           />
         </div>
       </div>
+
+      <div className="flex justify-center border-b-2 border-gray-700 py-4 mt-10">
+        <Link href="/about">
+          <button className="px-4 py-2 bg-sky-500 mr-10">Go to about test page.</button>
+        </Link>
+        <Link href="/contact">
+          <button className="px-4 py-2 bg-sky-500">Go to contact test page.</button>
+        </Link>
+      </div>
+        
     </div>
   );
 }
